@@ -1,0 +1,3 @@
+export const MAP_ACTIONS = {
+	LIST_MARKERS: 'LIST_MARKERS',
+}

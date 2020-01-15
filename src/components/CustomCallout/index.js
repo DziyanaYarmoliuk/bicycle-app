@@ -3,6 +3,7 @@ import React from 'react'
 import { Text } from 'react-native'
 import { Callout } from 'react-native-maps'
 
+import { styles } from './styles'
 /**
  * Render callout
  *
@@ -14,10 +15,13 @@ import { Callout } from 'react-native-maps'
  */
 const CustomCallout = ({data, onPress}) => {
     return (
-        <Callout onPress={() => onPress(data.details)}>
-            <Text>
-                available: {data.available}
-            </Text>
+        <Callout style={styles.container} onPress={() => onPress(data.details)}>
+			<Text style={styles.availText}>
+				 {data.available}🚲
+			</Text>
+			<Text style={styles.buttonText}>
+				details →
+			</Text>
         </Callout>
     )
 }

@@ -3,30 +3,20 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
     calloutDetails: {
-        position:        'absolute',
-        borderRadius:    6,
-        borderWidth:     .7,
-        borderColor:     'black',
-        bottom:          10,
         width:           wp(100) - 20,
-        padding:         10,
-        left:            10,
-        right:           10,
-        backgroundColor: 'white',
     },
     container:      {
         ...StyleSheet.absoluteFillObject,
-        justifyContent: 'flex-end',
+        justifyContent: 'flex-start',
         alignItems:     'center',
-    },
-    map:            {
-        ...StyleSheet.absoluteFillObject,
+		paddingTop: 30,
     },
     row:            {
         flexDirection: 'row',
     },
     rowItem:        {
         padding: 4,
+		paddingBottom: 10,
     },
 })
 
